@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerFixEnums", "ExerFixEnums\ExerFixEnums.csproj", "{CA4A529A-7000-479C-859C-4AD8165590FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA4A529A-7000-479C-859C-4AD8165590FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4A529A-7000-479C-859C-4AD8165590FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4A529A-7000-479C-859C-4AD8165590FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4A529A-7000-479C-859C-4AD8165590FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {941E0004-8354-4DD6-B402-3AF5E4736994}
+	EndGlobalSection
+EndGlobal
