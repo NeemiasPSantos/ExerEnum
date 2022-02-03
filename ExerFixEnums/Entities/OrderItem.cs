@@ -16,10 +16,12 @@ namespace ExerFixEnums.Entities
         {
 
         }
-        public OrderItem(int quantity, double price)
+
+        public OrderItem(int quantity, double price, Product product)
         {
             Quantity = quantity;
             Price = price;
+            Product = product;
         }
 
         public double SubTotal() 
