@@ -18,11 +18,13 @@ namespace ExerFixEnums
             DateTime bDate = DateTime.Parse(Console.ReadLine());
             
             Console.WriteLine("Enter order data:");
+            Console.Write("Status: ");
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
             DateTime OrDat = DateTime.Now;
 
             Client c1 = new Client(name, email, bDate);
             Order o1 = new Order(OrDat,status, c1);
+            OrderItem order;
 
             Console.Write("How many items to this order? ");
             int n = int.Parse(Console.ReadLine());
@@ -38,10 +40,15 @@ namespace ExerFixEnums
                 int quantity = int.Parse(Console.ReadLine());
 
                 Product p1 = new Product(nameP,price);
-                OrderItem o2 = new OrderItem(quantity,price, p1);
+                order = new OrderItem(quantity,price, p1);
 
-                o2.SubTotal();
+                order.SubTotal();
+
+                o1.AddItem(order);
             }
+
+            Console.WriteLine();
+            Console.WriteLine(o1);
 
         }
     }

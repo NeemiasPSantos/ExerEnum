@@ -10,8 +10,6 @@ namespace ExerFixEnums.Entities
         public double Price { get; set; }
         public Product Product { get; set; }
 
-
-
         public OrderItem()
         {
 
@@ -31,7 +29,7 @@ namespace ExerFixEnums.Entities
 
         public override string ToString()
         {
-            return Product 
+            return Product.Name 
                 + ", " 
                 + Price.ToString("F2", CultureInfo.InvariantCulture) 
                 + ", Quantity: " 

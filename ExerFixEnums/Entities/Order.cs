@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using ExerFixEnums.Entities.Enums;
+using System.Text;
+using System.Globalization;
 
 namespace ExerFixEnums.Entities
 {
@@ -39,6 +41,22 @@ namespace ExerFixEnums.Entities
                 sum += item.SubTotal();
             }
             return sum;
+        }
+        public override string ToString()
+        {
+            StringBuilder os = new StringBuilder();
+
+            os.AppendLine("ORDER SUMMARY: ");
+            os.AppendLine("Order moment: " + Moment.ToString("dd/MM/yyy HH:mm:ss"));
+            os.AppendLine("Order Status: ");        
+            os.AppendLine("Client: " + client);
+            os.AppendLine("Order items: ");
+            foreach (OrderItem item in Items) 
+            {
+                os.AppendLine(item.ToString());            
+            }
+            os.AppendLine("Total price: $"+ Total().ToString("F2", CultureInfo.InvariantCulture));
+            return os.ToString();
         }
     }
 }
